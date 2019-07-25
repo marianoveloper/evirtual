@@ -563,7 +563,16 @@
                             </div>
                           
                           </article>
-                        </div>
+                       </div>
+                       <div class="item">
+                        <article class="post clearfix maxwidth600 mb-sm-30">
+                          <div class="entry-header">
+                            <div class="post-thumb thumb"> <img src="images/curso-seguridad-paciente.png" alt="" class="img-responsive img-fullwidth"> </div>
+                            
+                          </div>
+                        
+                        </article>
+                     </div>
             </div>
           </div>
         </div>
