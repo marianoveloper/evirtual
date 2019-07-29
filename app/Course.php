@@ -51,9 +51,9 @@ class Course extends Model
 
 	protected $fillable = ['teacher_id', 'name', 'description','dirigido', 'picture','picture2', 'level_id', 'category_id', 'status'];
 
-	const PUBLISHED = 1;
-	const PENDING = 2;
-	const REJECTED = 3;
+	const PUBLISHED = 1;//publicado
+	const PENDING = 2;//pendiente de aprobacion	
+	const REJECTED = 3;//rechazado
 
 	protected $withCount = ['reviews', 'students'];
 
@@ -114,6 +114,9 @@ class Course extends Model
 
 	public function goals () {
 		return $this->hasMany(Goal::class)->select('id', 'course_id', 'goal');
+	}
+	public function linkscript () {
+		return $this->hasMany(Linkscript::class)->select('id', 'course_id', 'link');
 	}
 
 	public function level () {

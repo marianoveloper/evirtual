@@ -37,7 +37,7 @@
         <div class="container">
           <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive">
             <ul class="menuzord-menu ">
-              <li class="active"><a href="#home">HOME</a></li>
+              <li class="active"><a href="http://www.uccuyosj.edu.ar/">HOME</a></li>
               <li><a href="#informacion">INFORMACION</a></li>   
               <li><a href="#Novedades">NOVEDADES</a></li>                      
               <li><a href="{{ url('/home') }}">CURSOS</a></li>
@@ -181,7 +181,7 @@
                 </li>
   
                 <!-- SLIDE 2 -->
-                <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('assets/images/portada1.png')}}" data-rotate="0" data-saveperformance="off" data-title="Animate a mas" data-description="">
+                <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('assets/images/portada1.png')}}" data-rotate="0" data-saveperformance="off" data-title="Vos Podés" data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="{{asset('assets/images/portada1.png')}}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
@@ -233,7 +233,7 @@
                     data-splitin="none" 
                     data-splitout="none" 
                     data-responsive_offset="on"
-                    style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;"> Animate a mas
+                    style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;"> Vos Podés
                   </div>
   
                   
@@ -409,7 +409,7 @@
             <h3 class="title-pattern mt-0"><span class="text-white">Solicitar Informacion</span></h3>
         
             <!-- Formulario de Contacto-->
-            <form  class="reservation-form mt-20" method="post" action="includes/envia.php">
+            <form  class="reservation-form mt-20" method="post" action="">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="form-group mb-20">
@@ -472,6 +472,15 @@
         <div class="row">
           <div class="col-md-12">
             <div class="owl-carousel-3col" data-dots="true">
+                 <div class="item">
+                        <article class="post clearfix maxwidth600 mb-sm-30">
+                          <div class="entry-header">
+                            <div class="post-thumb thumb"> <img src="images/curso-seguridad-paciente.png" alt="" class="img-responsive img-fullwidth"> </div>
+                            
+                          </div>
+                        
+                        </article>
+                     </div>
               <div class="item">
                 <article class="post clearfix maxwidth600 mb-sm-30">
                   <div class="entry-header">
@@ -563,16 +572,8 @@
                             </div>
                           
                           </article>
-                       </div>
-                       <div class="item">
-                        <article class="post clearfix maxwidth600 mb-sm-30">
-                          <div class="entry-header">
-                            <div class="post-thumb thumb"> <img src="images/curso-seguridad-paciente.png" alt="" class="img-responsive img-fullwidth"> </div>
-                            
-                          </div>
+                        </div>
                         
-                        </article>
-                     </div>
             </div>
           </div>
         </div>

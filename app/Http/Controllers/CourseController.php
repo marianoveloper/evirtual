@@ -7,6 +7,8 @@ use App\Helpers\Helper;
 use App\Http\Requests\CourseRequest;
 use App\Mail\NewStudentInCourse;
 use App\Review;
+use App\Level;
+use App\Linkscript;
 
 class CourseController extends Controller
 {
@@ -18,6 +20,9 @@ class CourseController extends Controller
 			'goals' => function ($q) {
 				$q->select('id', 'course_id', 'goal');
 			},
+			'linkscript' => function ($q) {
+				$q->select('id', 'course_id', 'link');
+			},
 			'level' => function ($q) {
 				$q->select('id', 'name');
 			},
@@ -27,7 +32,7 @@ class CourseController extends Controller
 			'reviews.user',
 			'teacher'
 		])->get();
-
+ //dd($course->linkscript);
 		$related = $course->relatedCourses();
 
 		return view('courses.detail', compact('course', 'related'));//devuelve la informacion a detalle de los cursos

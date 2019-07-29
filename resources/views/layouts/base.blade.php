@@ -117,9 +117,7 @@
             <h4 class="widget-title line-bottom-theme-colored-2">Nuestros Horarios</h4>
             <div class="opening-hours">
               <ul class="list-border">
-                <li class="clearfix"> <span> Lunes a Viernes : Mañana  </span>
-                  <div class="value pull-left"> 9.00 am - 12.00 pm </div>
-                </li>
+                
                 <li class="clearfix"> <span> Lunes a Viernes : Tarde</span>
                   <div class="value pull-left"> 17.00 am - 21.00 pm </div>
                 </li>
