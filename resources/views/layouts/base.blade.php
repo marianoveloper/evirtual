@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es" xml:lang="es">
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
 
 <!-- Meta Tags -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
 
 
 <!-- Page Title -->
-<title>UCCuyo Educación Virtual</title>
+<title>UCCuyo Educaci贸n Virtual</title>
 
 <!-- Favicon and Touch Icons -->
 <link href={{asset('images/Uccvirtual.png')}} rel="shortcut icon" type="image/png">
@@ -91,10 +91,10 @@
           <div class="widget dark">
             <h4 class="widget-title">Contactos</h4>
              <ul class="list-inline mt-5">
-                <li class="m-0 pl-10 pr-10"> <i class="fa fa-map-marker text-theme-color-2 mr-5"></i><a class="text-gray" href="#">Av. José Ignacio de la Roza 1516 Oeste -Rivadavia-San Juan</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-map-marker text-theme-color-2 mr-5"></i><a class="text-gray" href="#">Av. Jos茅 Ignacio de la Roza 1516 Oeste -Rivadavia-San Juan</a> </li>
               <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#">+54 264 4292300</a> </li>
               <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#">campusvirtual@uccuyo.edu.ar</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a target="_blank" class="text-gray" href="http://www.uccuyo.edu.ar/">www.uccuyosj.edu.ar</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a target="_blank" class="text-gray" href="http://www.uccuyosj.edu.ar/">www.uccuyosj.edu.ar</a> </li>
             </ul>
           </div>
         </div>
@@ -106,7 +106,8 @@
                 <li><a target="_blank" href="http://www.uccuyosj.edu.ar/"><i class="fa fa-globe"></i></a></li>
               <li><a target="_blank" href="https://www.facebook.com/UCCuyoEducacionVirtual/"><i class="fa fa-facebook"></i></a></li>
                <li><a target="_blank" href="https://www.instagram.com/uccuyoeducacionvirtual/"><i class="fa fa-instagram"></i></a></li>
-               
+               <li><a target="_blank" href="https://ar.linkedin.com/in/uccuyoeducacionvirtual"><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/DptoEduVirtual"><i class="fa fa-twitter"></i></a></li>
               
             </ul>
           
@@ -117,8 +118,8 @@
             <h4 class="widget-title line-bottom-theme-colored-2">Nuestros Horarios</h4>
             <div class="opening-hours">
               <ul class="list-border">
-                
-                <li class="clearfix"> <span> Lunes a Viernes : Tarde</span>
+               
+               <li class="clearfix"> <span> Lunes a Viernes : Tarde</span>
                   <div class="value pull-left"> 17.00 am - 21.00 pm </div>
                 </li>
                                   
@@ -151,8 +152,7 @@
 <script src={{asset('assets/js/custom.js')}}></script>
 
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  -->
-      (Load Extensions only on Local File Systems ! 
-       The following part can be removed on Server for On Demand Loading) 
+       
 <script type="text/javascript" src="{{asset('assets/js/revolution-slider/js/extensions/revolution.extension.actions.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js')}}"></script>

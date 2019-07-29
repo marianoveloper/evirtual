@@ -481,6 +481,42 @@
                         
                         </article>
                      </div>
+                     <div class="item">
+                      <article class="post clearfix maxwidth600 mb-sm-30">
+                        <div class="entry-header">
+                          <div class="post-thumb thumb"> <img src="images/curso-publicacion-de-resultados.png" alt="" class="img-responsive img-fullwidth"> </div>
+                          
+                        </div>
+                      
+                      </article>
+                    </div>
+                    <div class="item">
+                      <article class="post clearfix maxwidth600 mb-sm-30">
+                        <div class="entry-header">
+                          <div class="post-thumb thumb"> <img src="images/curso-aprendizaje-colaborativo.png" alt="" class="img-responsive img-fullwidth"> </div>
+                          
+                        </div>
+                      
+                      </article>
+                    </div>
+                    <div class="item">
+                      <article class="post clearfix maxwidth600 mb-sm-30">
+                        <div class="entry-header">
+                          <div class="post-thumb thumb"> <img src="images/curso-gestion-del-tiempo.png" alt="" class="img-responsive img-fullwidth"> </div>
+                          
+                        </div>
+                      
+                      </article>
+                    </div>
+                    <div class="item">
+                      <article class="post clearfix maxwidth600 mb-sm-30">
+                        <div class="entry-header">
+                          <div class="post-thumb thumb"> <img src="images/curso-tesis-maestriaydoctorado.png" alt="" class="img-responsive img-fullwidth"> </div>
+                          
+                        </div>
+                      
+                      </article>
+                    </div>
               <div class="item">
                 <article class="post clearfix maxwidth600 mb-sm-30">
                   <div class="entry-header">
@@ -503,7 +539,25 @@
               <div class="item">
                 <article class="post clearfix maxwidth600 mb-sm-30">
                   <div class="entry-header">
-                    <div class="post-thumb thumb"> <img src="images/curso-ATLAS-ti.png" alt="" class="img-responsive img-fullwidth"> </div>
+                    <div class="post-thumb thumb"> <img src="images/curso-atlas-ti.png" alt="" class="img-responsive img-fullwidth"> </div>
+                    
+                  </div>
+                
+                </article>
+              </div>
+              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb"> <img src="images/curso-spss.png" alt="" class="img-responsive img-fullwidth"> </div>
+                    
+                  </div>
+                
+                </article>
+              </div>
+              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb"> <img src="images/curso-cvar.png" alt="" class="img-responsive img-fullwidth"> </div>
                     
                   </div>
                 
@@ -531,7 +585,7 @@
               <div class="item">
                   <article class="post clearfix maxwidth600 mb-sm-30">
                     <div class="entry-header">
-                      <div class="post-thumb thumb"> <img src="images/curso-incluir-indice.png" alt="" class="img-responsive img-fullwidth"> </div>
+                      <div class="post-thumb thumb"> <img src="images/curso-indice.png" alt="" class="img-responsive img-fullwidth"> </div>
                       
                     </div>
                   
@@ -564,16 +618,7 @@
                         
                         </article>
                       </div>
-                      <div class="item">
-                          <article class="post clearfix maxwidth600 mb-sm-30">
-                            <div class="entry-header">
-                              <div class="post-thumb thumb"> <img src="images/curso-publicacion-de-resultados.png" alt="" class="img-responsive img-fullwidth"> </div>
-                              
-                            </div>
-                          
-                          </article>
-                        </div>
-                        
+                   
             </div>
           </div>
         </div>
