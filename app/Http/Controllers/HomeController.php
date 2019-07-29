@@ -28,7 +28,7 @@ class HomeController extends Controller
 		    ->with('category', 'teacher', 'reviews')
 		    ->where('status', Course::PUBLISHED)
 		    ->latest()
-		    ->paginate(4);
+		    ->paginate(8);
 
         return view('home', compact('courses'));
     }

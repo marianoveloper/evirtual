@@ -12,7 +12,7 @@
                     <h5>{{ __("Categoría") }}: {{ $course->category->name }}</h5>
                     <h5>{{ __("Fecha de inicio") }}: {{ "Acceso inmediato" }}</h5>
                     <h5>{{ __("Costo del Curso") }}: {{"$". $course->costo }}</h5>
-                    <h6>{{ __("Estudiantes inscritos") }}: {{ $course->students_count }}</h6>
+                  <!--  <h6>{{ __("Estudiantes inscritos") }}: {{ $course->students_count }}</h6>!-->
                    <!-- <h6>{{ __("Número de valoraciones") }}: {{ $course->reviews_count }}</h6> !-->
                     @include('partials.courses.rating', ['rating' => $course->custom_rating])
                 </div>

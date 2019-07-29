@@ -14,7 +14,7 @@
     
         {{ __("INVITADO") }}
     </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+  <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <a
             class="dropdown-item"
            href="{{ route('login') }}"
@@ -27,5 +27,5 @@
         >
             {{ __("Registrarme") }}
         </a>
-    </div>
+    </div>!-->
 </li>
