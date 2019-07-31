@@ -19,6 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/','WelcomeController@index')->name('welcome');
+Route::post('/contact','WelcomeController@contac')->name('contact');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

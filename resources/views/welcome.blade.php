@@ -408,55 +408,57 @@
            <div class="p-30 mt-0 bg-theme-colored">
             <h3 class="title-pattern mt-0"><span class="text-white">Solicitar Informacion</span></h3>
         
-            <!-- Formulario de Contacto-->
-            <form  class="reservation-form mt-20" method="post" action="">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="form-group mb-20">
-                    <input placeholder="Nombre y Apellido" type="text" id="nombre" name="nombre" required="" class="form-control">
-                  </div>
+           <!-- Formulario de Contacto-->
+           <form  class="reservation-form mt-20" method="post" action="route{{'contact'}}"  enctype="multipart/form-data">
+            {{ csrf_field() }}
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group mb-20">
+                  <input placeholder="Nombre y Apellido" type="text" id="name" name="name" required="" class="form-control">
                 </div>
-                <div class="col-sm-12">
-                  <div class="form-group mb-20">
-                    <input placeholder="Email" type="email" id="email" name="email" class="form-control" required="">
-                  </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group mb-20">
+                  <input placeholder="Email" type="email" id="email" name="email" class="form-control" required="">
                 </div>
-               
-                <div class="col-sm-12">
-                  <div class="form-group mb-20">
-                    <div class="styled-select">
-                      <select id="curso_select" name="curso_select" class="form-control" required="">
-                        <option value="">Elige el curso online</option>
-                        <option value="Moodle">Curso Moodle - Como armar un examen parcial</option>
-                        <option value="Alzheimer">Curso Alzheimer -Como prevenirlo y tratarlo</option>
-                        <option value="Proteinograma">Curso Proteinograma Electricoforetico</option>
-                        <option value="Catequistas">Curso Catequistas del Siglo XXI</option>
-                        <option value="Enseñanza">Curso Enseñanza de la inmunologia</option>
-                        <option value="Instructivo">Curso Instructivo para incluir el indice</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <textarea placeholder="Ingrese mensaje" rows="3" class="form-control required" name="mensaje" id="form_message" aria-required="true"></textarea>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group mb-0 mt-10">
-                   
-                    <button type="submit" name="submit" class="btn btn-colored btn-theme-color-2 text-white btn-lg btn-block" data-loading-text="Por favor espere...">Enviar</button>
+              </div>
+             
+              <div class="col-sm-12">
+                <div class="form-group mb-20">
+                  <div class="styled-select">
+                    <select id="course" name="course"  class="form-control"  
+                   data-placeholder="Seleccione marca vehiculo..." >
+                     <option value="">Seleccionar Curso</option>
+                     @foreach ($courses as $item){
+                     <option value="{{$item->id}}"> {{ $item->name }} </option>
+                     }
+                     @endforeach
+
+                   </select>
                   </div>
                 </div>
               </div>
-            </form>
-            
+              
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <textarea placeholder="Ingrese mensaje" rows="3" class="form-control required" name="msg" id="msg" aria-required="true"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group mb-0 mt-10">
+                 
+                  <button type="submit" name="submit" class="btn btn-colored btn-theme-color-2 text-white btn-lg btn-block" data-loading-text="Por favor espere...">Enviar</button>
+                </div>
+              </div>
             </div>
+          </form>
+          
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
     <!-- Section: Cursos -->
     <section id="Novedades" class="">
@@ -512,6 +514,24 @@
                       <article class="post clearfix maxwidth600 mb-sm-30">
                         <div class="entry-header">
                           <div class="post-thumb thumb"> <img src="images/curso-tesis-maestriaydoctorado.png" alt="" class="img-responsive img-fullwidth"> </div>
+                          
+                        </div>
+                      
+                      </article>
+                    </div>
+                    <div class="item">
+                      <article class="post clearfix maxwidth600 mb-sm-30">
+                        <div class="entry-header">
+                          <div class="post-thumb thumb"> <img src="images/curso-educacion-superior.png" alt="" class="img-responsive img-fullwidth"> </div>
+                          
+                        </div>
+                      
+                      </article>
+                    </div>
+                    <div class="item">
+                      <article class="post clearfix maxwidth600 mb-sm-30">
+                        <div class="entry-header">
+                          <div class="post-thumb thumb"> <img src="images/curso-interpretacion-proteinograma.png" alt="" class="img-responsive img-fullwidth"> </div>
                           
                         </div>
                       
