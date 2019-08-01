@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 use App\Course;
 use DB;
 use Mail;
+use App\Helpers\Helper;
+use App\Http\Requests\CourseRequest;
+use App\Mail\NewStudentInCourse;
+use App\Review;
+use App\Level;
+use App\Linkscript;
 
 class WelcomeController extends Controller
 {
@@ -24,15 +30,16 @@ class WelcomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Course $course)
     {
     	
-
+        $direccion=$course->pathAttachment();
         $courses=DB::table('courses')
         ->where('status', Course::PUBLISHED)
         ->get();
       //dd($courses);
-        return view('welcome')->with('courses',$courses);
+      
+        return view('welcome',compact('courses','direccion'));
     }
     public function contact(Request $request){
         
@@ -66,5 +73,5 @@ class WelcomeController extends Controller
         return back()->with('success', 'Gracias por contactarse con nosotros!');
     }
 
-
+  
 }
