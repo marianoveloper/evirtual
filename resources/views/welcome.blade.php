@@ -407,7 +407,23 @@
           <div class="col-md-4">
            <div class="p-30 mt-0 bg-theme-colored">
             <h3 class="title-pattern mt-0"><span class="text-white">Solicitar Informacion</span></h3>
-        
+        <!-- verificacion de errores!-->
+        @if (count($errors) > 0)
+        <div class="alert alert-danger">
+         <button type="button" class="close" data-dismiss="alert">×</button>
+         <ul>
+          @foreach ($errors->all() as $error)
+           <li>{{ $error }}</li>
+          @endforeach
+         </ul>
+        </div>
+       @endif
+       @if ($message = Session::get('success'))
+       <div class="alert alert-success alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+               <strong>{{ $message }}</strong>
+       </div>
+       @endif
            <!-- Formulario de Contacto-->
            <form  class="form-group" method="post" action="{{ route('contact') }}"  enctype="multipart/form-data">
             {{ csrf_field() }}
@@ -431,7 +447,7 @@
                    data-placeholder="Seleccione marca vehiculo..." >
                      <option value="">Seleccionar Curso</option>
                      @foreach ($courses as $item){
-                     <option value="{{$item->id}}"> {{ $item->name }} </option>
+                     <option value="{{$item->name}}"> {{ $item->name }} </option>
                      }
                      @endforeach
 

@@ -533,7 +533,8 @@
 <td class="body-padding"></td>
 <td class="body-padded">
 <div class="body-title">Mensaje enviado por: {{$name}}, ({{$email}})</div>
-<div class="body-title">Curso que solicita informacion: {{$email}}</div>
+<div class="body-title">Curso que solicita informacion: {{$course}}</div>
+
 <table class="body-text">
 <tr>
 <td class="body-text-cell">

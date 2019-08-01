@@ -41,18 +41,22 @@ class WelcomeController extends Controller
         $data = array(
             'name'      =>  $request->name,
             'message'   =>   $request->msg,
-            'email' => $request->email
+            'email' => $request->email,
+            'course' => $request->course
         );
 
-        dd($data);
-        $subject = "Asunto del correo";
+       // dd($data);
+        $curso=$data['course'];
+        $mail=$data['email'];
+        $nombre=$data['name'];
+        $subject = "Informacion del curso " + $nombre;
         $for = "b.mariano05@gmail.com";
-        Mail::send('email',$request->all(), function($msj) use($subject,$for){
-            $msj->from("benitezmariano5@gmail.com","Alma");
+        Mail::send('email',$request->all(), function($msj) use($subject,$for,$mail,$nombre){
+            $msj->from($mail,$nombre);
             $msj->subject($subject);
             $msj->to($for);
         });
-        return redirect()->back();
+        return back()->with('success', 'Gracias por contactarse con nosotros!');
     }
 
 
