@@ -443,9 +443,9 @@
               <div class="col-sm-12">
                 <div class="form-group mb-20">
                   <div class="styled-select">
-                    <select id="course" name="course"  class="form-control"  
-                   data-placeholder="Seleccione marca vehiculo..." >
-                     <option value="">Seleccionar Curso</option>
+                    <select id="curso" name="curso"  class="form-control"  
+                   data-placeholder="Seleccione curso..." >
+                     <option>Seleccionar Curso</option>
                      @foreach ($courses as $item){
                      <option value="{{$item->name}}"> {{ $item->name }} </option>
                      }
@@ -458,7 +458,7 @@
               
               <div class="col-sm-12">
                 <div class="form-group">
-                  <textarea placeholder="Ingrese mensaje" rows="3" class="form-control required" name="msg" id="msg" aria-required="true"></textarea>
+                  <textarea placeholder="Ingrese mensaje" rows="3" class="form-control required" name="msg" id="msg" aria-required="true" ></textarea>
                 </div>
               </div>
               <div class="col-sm-12">

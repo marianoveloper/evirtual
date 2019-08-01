@@ -37,16 +37,23 @@ class WelcomeController extends Controller
     public function contact(Request $request){
         
         //dd($request);
+        $this->validate($request, [
+            'name'     =>  'required',
+            'email'  =>  'required|email',
+            'msg' =>  'required',
+            'curso' => 'required|not_in:0'
+
+           ]);
 
         $data = array(
             'name'      =>  $request->name,
             'message'   =>   $request->msg,
             'email' => $request->email,
-            'course' => $request->course
+            'curso' => $request->curso
         );
 
        // dd($data);
-        $curso=$data['course'];
+        $curso=$data['curso'];
         $mail=$data['email'];
         $nombre=$data['name'];
         $subject = "Informacion del curso " + $nombre;

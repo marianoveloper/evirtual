@@ -525,15 +525,15 @@
 <td>
 <table class="soapbox">
 <tr>
-<td class="soapbox-title">Mensaje enviado desde el formulario de contacto del sitio web</td>
+<td class="soapbox-title">Mensaje enviado desde el formulario de informacion de evirtual</td>
 </tr>
 </table>
 <table class="body">
 <tr>
 <td class="body-padding"></td>
 <td class="body-padded">
-<div class="body-title">Mensaje enviado por: {{$name}}, ({{$email}})</div>
-<div class="body-title">Curso que solicita informacion: {{$course}}</div>
+<div class="body-title">Enviado por: {{$name}}, ({{$email}})</div>
+<div class="body-title">Curso que solicita informacion: {{$curso}}</div>
 
 <table class="body-text">
 <tr>
