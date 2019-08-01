@@ -23,9 +23,6 @@ class CourseController extends Controller
 			'linkscript' => function ($q) {
 				$q->select('id', 'course_id', 'link');
 			},
-			'level' => function ($q) {
-				$q->select('id', 'name');
-			},
 			'requirements' => function ($q) {
 				$q->select('id', 'course_id', 'requirement');
 			},

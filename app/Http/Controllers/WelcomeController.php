@@ -16,7 +16,7 @@ class WelcomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index']);
+        //$this->middleware('auth')->except(['index']);
     }
 
     /**
@@ -35,6 +35,16 @@ class WelcomeController extends Controller
         return view('welcome')->with('courses',$courses);
     }
     public function contact(Request $request){
+        
+        //dd($request);
+
+        $data = array(
+            'name'      =>  $request->name,
+            'message'   =>   $request->msg,
+            'email' => $request->email
+        );
+
+        dd($data);
         $subject = "Asunto del correo";
         $for = "b.mariano05@gmail.com";
         Mail::send('email',$request->all(), function($msj) use($subject,$for){

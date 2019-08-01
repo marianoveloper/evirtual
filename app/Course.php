@@ -119,9 +119,9 @@ class Course extends Model
 		return $this->hasMany(Linkscript::class)->select('id', 'course_id', 'link');
 	}
 
-	public function level () {
+	/*public function level () {
 		return $this->belongsTo(Level::class)->select('id', 'name');
-	}
+	}*/
 
 	public function reviews () {
 		return $this->hasMany(Review::class)->select('id', 'user_id', 'course_id', 'rating', 'comment', 'created_at');

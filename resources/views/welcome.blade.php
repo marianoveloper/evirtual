@@ -409,7 +409,7 @@
             <h3 class="title-pattern mt-0"><span class="text-white">Solicitar Informacion</span></h3>
         
            <!-- Formulario de Contacto-->
-           <form  class="reservation-form mt-20" method="post" action="route{{'contact'}}"  enctype="multipart/form-data">
+           <form  class="form-group" method="post" action="{{ route('contact') }}"  enctype="multipart/form-data">
             {{ csrf_field() }}
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="row">

@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/','WelcomeController@index')->name('welcome');
-Route::post('/contact','WelcomeController@contac')->name('contact');
+Route::post('/contact','WelcomeController@contact')->name('contact');
 
 Auth::routes();
 
