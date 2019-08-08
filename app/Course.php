@@ -49,7 +49,7 @@ class Course extends Model
 {
 	use SoftDeletes;
 
-	protected $fillable = ['teacher_id', 'name', 'description','dirigido', 'picture','picture2', 'level_id', 'category_id', 'status'];
+	protected $fillable = ['teacher_id', 'name', 'description','dirigido', 'picture','picture2','costo','fecha_inicio','pdf','level_id', 'category_id', 'status'];
 
 	const PUBLISHED = 1;//publicado
 	const PENDING = 2;//pendiente de aprobacion	
@@ -107,6 +107,12 @@ class Course extends Model
 	}
 	public function dirigido() {
 		return 'dirigido';
+	}
+	public function fecha_inicio() {
+		return 'fecha_inicio';
+	}
+	public function pdf() {
+		return 'pdf';
 	}
 	public function category () {
 		return $this->belongsTo(Category::class)->select('id', 'name');

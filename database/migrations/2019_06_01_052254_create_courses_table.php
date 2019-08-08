@@ -27,8 +27,10 @@ class CreateCoursesTable extends Migration
 	        $table->string('slug');//url amigable del curso
             $table->string('picture')->nullable();//imagen del curso
             $table->string('picture2')->nullable();//imagen del curso
-            $table->string('pdf')->nullable();//pdf descripcion del curso
-            $table->integer('costo')->nulleable();//precio ARS del curso
+            $table->string('dirigido');
+            $table->string('Fecha_inicio');
+            $table->string('Pdf')->nullable();//pdf descripcion del curso
+            $table->integer('costo');//precio ARS del curso
 	        $table->enum('status', [
 	        	\App\Course::PUBLISHED, \App\Course::PENDING, \App\Course::REJECTED
 	        ])->default(\App\Course::PENDING);
